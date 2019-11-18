@@ -31,8 +31,8 @@ function promptUser() {
 
         .then(function ({ username, color }) {
             console.log(username, color)
-            let usercolor = color
-            console.log("usercolor", usercolor)
+            let usercolor = color;
+            console.log("usercolor", usercolor);
 
             const queryUrl = `https://api.github.com/users/${username}`;
 
