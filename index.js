@@ -42,7 +42,6 @@ function promptUser() {
                     color: usercolor,
                     image: res.data.avatar_url,
                     name: res.data.name,
-                    company: res.data.company,
                     login: res.data.login,
                     bio: res.data.bio,
                     publicRepos: res.data.public_repos,

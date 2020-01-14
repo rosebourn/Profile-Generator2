@@ -54,7 +54,7 @@ function generateHTML(data) {
            }
            .wrapper {
            background-color: ${colors[data.color].wrapperBackground};
-           padding-top: 100px;
+           padding-top: 50px;
            }
            body {
            background-color: white;
@@ -71,10 +71,10 @@ function generateHTML(data) {
            margin: 0;
            }
            h1 {
-           font-size: 3em;
+           font-size: 30px;
            }
            h2 {
-           font-size: 2.5em;
+           font-size: 30px;
            }
            h3 {
            font-size: 2em;
@@ -97,7 +97,6 @@ function generateHTML(data) {
            background-color: ${colors[data.color].headerBackground};
            color: ${colors[data.color].headerColor};
            padding: 10px;
-           width: 95%;
            border-radius: 6px;
            }
            .photo-header img {
@@ -109,6 +108,10 @@ function generateHTML(data) {
            border: 6px solid ${colors[data.color].photoBorderColor};
            box-shadow: rgba(0, 0, 0, 0.3) 4px 1px 20px 4px;
            }
+           img {
+            height: 200px;
+            width: 200px;
+          }
            .photo-header h1, .photo-header h2 {
            width: 100%;
            text-align: center;
@@ -144,6 +147,8 @@ function generateHTML(data) {
              justify-content: space-between;
              margin-top: 20px;
              margin-bottom: 20px;
+             margin-left: 375px;
+             margin-right: auto;
            }
   
            .card {
@@ -152,7 +157,22 @@ function generateHTML(data) {
              background-color: ${colors[data.color].headerBackground};
              color: ${colors[data.color].headerColor};
              margin: 20px;
+             width: 450px;
+             float: left;
+             margin-left: 150px;
            }
+
+           .links {
+            text-align: center;
+            list-style-type: none;
+            font-family: 'BioRhyme', serif;
+            padding-right: 7px;
+            padding-left: 7px;
+          }
+
+          ul.links li {
+            display: inline;
+          }
            
            .col {
            flex: 1;
@@ -189,7 +209,6 @@ function generateHTML(data) {
         <main>
 
         <div class="card">
-        <div class="row">
         <div class="col-md-6">
         <h3>Public Repositories</h3>
         <h4>${data.publicRepos}</h4>
@@ -198,7 +217,6 @@ function generateHTML(data) {
         </div>
 
         <div class="card">
-        <div class="row">
         <div class="col-md-6">
         <h3>Followers</h3>
         <h4>${data.followers}</h4>
@@ -207,7 +225,6 @@ function generateHTML(data) {
         </div>
 
         <div class="card">
-        <div class="row">
         <div class="col-md-6">
         <h3>GitHub Stars</h3>
         <h4>${data.stars}</h4>
@@ -216,7 +233,6 @@ function generateHTML(data) {
         </div>
 
         <div class="card">
-        <div class="row">
         <div class="col-med-6">
         <h3>Following</h3>
         <h4>${data.following}</h4>
