@@ -18,9 +18,9 @@ User will then be asked for a Github username and asked to choose red, blue, gre
 - Node.js
 - GitHub API
 - NPM Packages:
-> axios
-> inquier
-> util
-> electron-html-to
+  - axios
+  - inquier
+  - util
+  - electron-html-to
 
 ![](images/screenShot.png)
